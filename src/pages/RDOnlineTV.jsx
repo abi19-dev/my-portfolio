@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
+import RDOnlineTV1 from '../assets/Rd/Landing/RDOnline.png';
 import RDOnlineTVLogo from '../assets/Rd/RDOnlineTVLogo.png';
 import RDGradientTest from '../assets/Rd/Landing/RDGradientTest.png'
 import AOS from 'aos';
@@ -15,7 +16,11 @@ const RDOnlineTV = () => {
         <>
             <div className='flex flex-col w-full h-screen bg-black-1000'>
                 <div className='flex lg:flex-row flex-col h-screen bg-black-1000 lg:justify-center items-center'>
-                    <div className='lg:w-1/2 h-full flex flex-col lg:justify-center justify-start items-center' data-aos="fade-down">
+                    <div className='lg:w-1/2 h-full flex flex-col lg:justify-center justify-start items-center' data-aos="fade-down"><img
+                        src={RDOnlineTV1}
+                        alt="Desktop View"
+                        className='hidden lg:block w-full'
+                    />
 
                         {/* Image for Mobile View */}
                         <img
