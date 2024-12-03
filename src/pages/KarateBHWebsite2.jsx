@@ -7,7 +7,7 @@ import Home2 from '../assets/Home2Mobile.png';
 import Home3 from '../assets/Home3Mobile.png';
 import Home4 from '../assets/Home4Mobile.png';
 import Home12 from '../assets/Home12Mobile.png';
-import NavBar1 from '../assets/Navbar1Mobile.png';
+import NavBar1 from '../assets/NavBar1Mobile.png';
 import NavBar2 from '../assets/NavBar2Mobile.png';
 import News1 from '../assets/News1Mobile.png';
 import News2 from '../assets/News2Mobile.png';
