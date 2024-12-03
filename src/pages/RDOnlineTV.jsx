@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
-import RDOnlineTV1 from '../assets/RDOnline.png';
+import RDOnlineTV1 from '../assets/RdOnline.png';
 import RDOnlineTVLogo from '../assets/RDOnlineTVLogo.png';
 import RDGradientTest from '../assets/RDGradientTest.png'
 import AOS from 'aos';
