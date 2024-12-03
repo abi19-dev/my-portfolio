@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
 import { Carousel } from 'react-responsive-carousel';
-import KarateAppMockup from '../assets/KarateBHApp/Desktop-Mobile/KarateAppMockup.png';
-import KarateAppMockup2 from '../assets/KarateBHApp/Desktop-Mobile/KarateAppMockup2.png';
-import KarateAppMockup3 from '../assets/KarateBHApp/Desktop-Mobile/KarateAppMockup3.png';
-import karatebhappicon from '../assets/KarateBHApp/karatebhappicon.png';
+import KarateAppMockup from '../assets/KarateAppMockup.png';
+import KarateAppMockup2 from '../assets/KarateAppMockup2.png';
+import KarateAppMockup3 from '../assets/KarateAppMockup3.png';
+import karatebhappicon from '../assets/karatebhappicon.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../App.css';

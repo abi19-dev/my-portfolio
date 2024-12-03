@@ -1,20 +1,20 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
 import { Carousel } from 'react-responsive-carousel';
-import Lezzet1 from '../assets/Lezzet/Desktop-Mobile/Lezzet1.png';
-import Lezzet2 from '../assets/Lezzet/Desktop-Mobile/Lezzet2.png';
-import Lezzet3 from '../assets/Lezzet/Desktop-Mobile/Lezzet3.png';
-import Lezzet4 from '../assets/Lezzet/Desktop-Mobile/Lezzet4.png';
-import Lezzet5 from '../assets/Lezzet/Desktop-Mobile/Lezzet5.png';
-import Lezzet6 from '../assets/Lezzet/Desktop-Mobile/Lezzet6.png';
-import Lezzet7 from '../assets/Lezzet/Desktop-Mobile/Lezzet7.png';
-import Lezzet8 from '../assets/Lezzet/Desktop-Mobile/Lezzet8.png';
-import Lezzet9 from '../assets/Lezzet/Desktop-Mobile/Lezzet9.png';
-import Lezzet10 from '../assets/Lezzet/Desktop-Mobile/Lezzet10.png';
-import Lezzet11 from '../assets/Lezzet/Desktop-Mobile/Lezzet11.png';
+import Lezzet1 from '../assets/Lezzet1.png';
+import Lezzet2 from '../assets/Lezzet2.png';
+import Lezzet3 from '../assets/Lezzet3.png';
+import Lezzet4 from '../assets/Lezzet4.png';
+import Lezzet5 from '../assets/Lezzet5.png';
+import Lezzet6 from '../assets/Lezzet6.png';
+import Lezzet7 from '../assets/Lezzet7.png';
+import Lezzet8 from '../assets/Lezzet8.png';
+import Lezzet9 from '../assets/Lezzet9.png';
+import Lezzet10 from '../assets/Lezzet10.png';
+import Lezzet11 from '../assets/Lezzet11.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import LezzetLogo from '../assets/Lezzet/LezzetLogo.png';
+import LezzetLogo from '../assets/LezzetLogo.png';
 import '../App.css';
 
 const Lezzet2Page = () => {

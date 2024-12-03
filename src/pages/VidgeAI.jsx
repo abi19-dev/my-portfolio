@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
-import VidgeAI1 from '../assets/VidgeAI/Landing/Vidge.png';
-import VidgeAILogo from '../assets/VidgeAI/VidgeAILogo.png';
-import VidgeGradientTest from '../assets/VidgeAI/Landing/VidgeGradientTest.png'
+import VidgeAI1 from '../assets/Vidge.png';
+import VidgeAILogo from '../assets/VidgeAILogo.png';
+import VidgeGradientTest from '../assets/VidgeGradientTest.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../App.css';

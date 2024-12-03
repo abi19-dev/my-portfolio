@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
-import KarateBHWebsiteGradient from '../assets/KarateBHWebsite/Landing/KarateWebsite.png';
-import GradientMobile from '../assets/KarateBHWebsite/Landing/GradientMobile.png'
-import karatebhappicon from '../assets/KarateBHApp/karatebhappicon.png';
+import KarateBHWebsiteGradient from '../assets/KarateWebsite.png';
+import GradientMobile from '../assets/GradientMobile.png'
+import karatebhappicon from '../assets/karatebhappicon.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../App.css';

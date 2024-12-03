@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
-import LezzetLanding from '../assets/Lezzet/Landing/LezzetLanding.png';
-import LezzetLandingMobile from '../assets/Lezzet/Landing/LezzetLandingMobile.png';
-import LezzetLogo from '../assets/Lezzet/LezzetLogo.png';
+import LezzetLanding from '../assets/LezzetLanding.png';
+import LezzetLandingMobile from '../assets/LezzetLandingMobile.png';
+import LezzetLogo from '../assets/LezzetLogo.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../App.css';
