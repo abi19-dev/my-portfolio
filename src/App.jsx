@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Karikatura from './assets/caricature.webp'
 import HomeSection from './pages/HomeSection'
 import AboutMeSection from './pages/AboutMeSection'
 import './App.css'
@@ -15,6 +16,7 @@ import RDOnlineTV2 from './pages/RDOnlineTV2'
 import Lezzet from './pages/Lezzet'
 import Lezzet2 from './pages/Lezzet2'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 
@@ -25,7 +27,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 7000); // 7 seconds
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -33,7 +35,7 @@ function App() {
   if (isLoading) {
     return (
       <div className="loading-screen flex items-center justify-center h-screen bg-black-1000">
-        <h1 className="text-white text-4xl">Loading...</h1>
+        <LazyLoadImage className='h-1/2 rounded-full border-yellow-400 border-8' src={Karikatura} />
       </div>
     );
   }
