@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
-import VidgeAI1 from '../assets/Vidge.png';
-import VidgeAILogo from '../assets/VidgeAILogo.png';
-import VidgeGradientTest from '../assets/VidgeGradientTest.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../App.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const VidgeAI = () => {
     useEffect(() => {
@@ -16,22 +14,22 @@ const VidgeAI = () => {
         <>
             <div className='flex flex-col w-full h-screen bg-black-1000'>
                 <div className='flex lg:flex-row flex-col h-screen bg-black-1000 lg:justify-center items-center'>
-                    <div className='lg:w-1/2 h-full flex flex-col lg:justify-center justify-start items-center' data-aos="fade-down"><img
-                        src={VidgeAI1}
+                    <div className='lg:w-1/2 h-full flex flex-col lg:justify-center justify-start items-center' data-aos="fade-down"><LazyLoadImage effect='opacity'
+                        src="https://abdulahportfolio.blob.core.windows.net/portfolio/Vidge.png"
                         alt="Desktop View"
                         className='hidden lg:block w-full'
                     />
 
                         {/* Image for Mobile View */}
-                        <img
-                            src={VidgeGradientTest}
+                        <LazyLoadImage effect='opacity'
+                            src="https://abdulahportfolio.blob.core.windows.net/portfolio/VidgeGradientTest.png"
                             alt="Mobile View"
                             className='block lg:hidden w-full h-full'
                         /></div>
                     <div className='lg:w-1/2 lg:pl-0 lg:pr-0 pr-10 pl-10 lg:h-full flex flex-col justify-center items-center h-full' data-aos="fade-up">
                         <div className='flex flex-row gap-3 items-center'>
                             <div className='lg:h-full flex flex-col items-center justify-center' data-aos="zoom-in">
-                                <img src={VidgeAILogo} alt="Slika" className='lg:w-full lg:h-full' />
+                                <LazyLoadImage src="https://abdulahportfolio.blob.core.windows.net/portfolio/VidgeAILogo.png" alt="Slika" className='lg:w-full lg:h-full' />
                             </div>
                             <div className='flex flex-col gap-2' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
                                 <p className='lg:text-4xl text-base font-bold'>VidgeAI</p>

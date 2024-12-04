@@ -1,10 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
 import { Carousel } from 'react-responsive-carousel';
-import KarateAppMockup from '../assets/KarateAppMockup.png';
-import KarateAppMockup2 from '../assets/KarateAppMockup2.png';
-import KarateAppMockup3 from '../assets/KarateAppMockup3.png';
-import karatebhappicon from '../assets/karatebhappicon.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../App.css';
@@ -15,9 +12,9 @@ const KarateBHApp2 = () => {
     }, []);
 
     const images = [
-        { src: KarateAppMockup, alt: "Karate Website Page 3" },
-        { src: KarateAppMockup2, alt: "Karate Website Page 3" },
-        { src: KarateAppMockup3, alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/KarateAppMockup.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/KarateAppMockup2.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/KarateAppMockup3.png", alt: "Karate Website Page 3" },
     ];
 
     return (
@@ -27,7 +24,7 @@ const KarateBHApp2 = () => {
                     <div className='h-1/6 pl-5 pt-5 w-full' data-aos="fade-down">
                         <div className='flex flex-row gap-3 items-center'>
                             <div className='h-1/2' data-aos="zoom-in">
-                                <img src={karatebhappicon} alt="Slika" className='w-full h-full' />
+                                <LazyLoadImage src="https://abdulahportfolio.blob.core.windows.net/portfolio/karatebhappicon.png" alt="Slika" className='w-full h-full' />
                             </div>
                             <div className='flex flex-col lg:gap-0 gap-2' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-down">
                                 <p className='lg:text-xl font-bold'>KarateBH App</p>
@@ -57,7 +54,7 @@ const KarateBHApp2 = () => {
                                     showArrows={false}
                                 >
                                     {images.map((image, index) => (
-                                        <img
+                                        <LazyLoadImage effect='blur'
                                             key={index}
                                             src={image.src}
                                             alt={image.alt}

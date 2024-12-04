@@ -1,29 +1,11 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
 import { Carousel } from 'react-responsive-carousel';
-import CreatePost1 from '../assets/CreatePost1Mobile.png';
-import CreatePost2 from '../assets/CreatePost2Mobile.png';
-import Home2 from '../assets/Home2Mobile.png';
-import Home3 from '../assets/Home3Mobile.png';
-import Home4 from '../assets/Home4Mobile.png';
-import Home12 from '../assets/Home12Mobile.png';
-import NavBar1 from '../assets/NavBar1Mobile.png';
-import NavBar2 from '../assets/NavBar2Mobile.png';
-import News1 from '../assets/News1Mobile.png';
-import News2 from '../assets/News2Mobile.png';
-import News3 from '../assets/News3Mobile.png';
-import Home1Desktop from '../assets/Home1.png';
-import Home2Desktop from '../assets/Home2.png';
-import Home3Desktop from '../assets/Home3.png';
-import News1Desktop from '../assets/News1.png';
-import News2Desktop from '../assets/News2.png';
-import CreatePost1Desktop from '../assets/CreatePost1.png';
-import CreatePost2Desktop from '../assets/CreatePost2.png';
-import karatebhappicon from '../assets/karatebhappicon.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import '../App.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const KarateBHWebsite2 = () => {
     useEffect(() => {
@@ -31,24 +13,24 @@ const KarateBHWebsite2 = () => {
     }, []);
 
     const images = [
-        { src: Home1Desktop, alt: "Karate Website Page 3" },
-        { src: Home2Desktop, alt: "Karate Website Page 3" },
-        { src: Home3Desktop, alt: "Karate Website Page 3" },
-        { src: News1Desktop, alt: "Karate Website Page 3" },
-        { src: News2Desktop, alt: "Karate Website Page 3" },
-        { src: CreatePost1Desktop, alt: "Karate Website Page 3" },
-        { src: CreatePost2Desktop, alt: "Karate Website Page 3" },
-        { src: Home12, alt: "Karate Website" },
-        { src: Home2, alt: "Karate Website Page 2" },
-        { src: Home3, alt: "Karate Website Page 3" },
-        { src: Home4, alt: "Karate Website Page 3" },
-        { src: NavBar1, alt: "Karate Website Page 3" },
-        { src: NavBar2, alt: "Karate Website Page 3" },
-        { src: News1, alt: "Karate Website Page 3" },
-        { src: News2, alt: "Karate Website Page 3" },
-        { src: News3, alt: "Karate Website Page 3" },
-        { src: CreatePost1, alt: "Karate Website Page 3" },
-        { src: CreatePost2, alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Home1.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Home2.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Home3.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/News1.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/News2.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/CreatePost1.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/CreatePost2.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Home12Mobile.png", alt: "Karate Website" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Home2Mobile.png", alt: "Karate Website Page 2" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Home3Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Home4Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/NavBar1Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/NavBar2Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/News1Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/News2Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/News3Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/CreatePost1Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/CreatePost2Mobile.png", alt: "Karate Website Page 3" },
     ];
 
     return (
@@ -58,7 +40,7 @@ const KarateBHWebsite2 = () => {
                     <div className='h-1/6 pl-5 pt-5 w-full' data-aos="fade-down">
                         <div className='flex flex-row gap-3 items-center'>
                             <div className='h-1/2' data-aos="zoom-in">
-                                <img src={karatebhappicon} alt="Slika" className='w-full h-full' />
+                                <LazyLoadImage src="https://abdulahportfolio.blob.core.windows.net/portfolio/karatebhappicon.png" alt="Slika" className='w-full h-full' />
                             </div>
                             <div className='flex flex-col lg:gap-0 gap-2' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-down">
                                 <p className='lg:text-xl font-bold'>KarateBH Website</p>
@@ -88,11 +70,10 @@ const KarateBHWebsite2 = () => {
                                     showArrows={false}
                                 >
                                     {images.map((image, index) => (
-                                        <img
+                                        <LazyLoadImage effect='blur'
                                             key={index}
                                             src={image.src}
                                             alt={image.alt}
-                                            effect="blur"
                                         />
                                     ))}
                                 </Carousel>

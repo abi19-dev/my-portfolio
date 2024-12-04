@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from "react-scroll";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Ja from '../assets/Ja.jpg';
 import '../App.css';
 
 const HomeSection = () => {
@@ -91,7 +91,7 @@ const HomeSection = () => {
                     </div>
                     <div className='lg:w-1/2 lg:pt-5 relative flex justify-center items-center'>
                         <div className="relative lg:w-[500px] lg:h-[500px] w-full h-[200px] flex lg:justify-center lg:items-center overflow-hidden lg:rounded-full rounded-md border-4 border-yellow-400" data-aos="fade-left">
-                            <img src={Ja} alt="Slika" className='lg:rounded-full w-full h-full object-cover' />
+                            <LazyLoadImage src="https://abdulahportfolio.blob.core.windows.net/portfolio/Ja.jpg" alt="Slika" className='lg:rounded-full w-full h-full object-cover' />
                         </div>
                     </div>
                 </div>

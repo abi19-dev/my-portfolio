@@ -1,17 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
 import { Carousel } from 'react-responsive-carousel';
-import VidgeAILogo from '../assets/VidgeAILogo.png';
-import VidgeMockup from '../assets/VidgeMockup.png';
-import VidgeMockup2 from '../assets/VidgeMockup2.png';
-import VidgeMockup3 from '../assets/VidgeMockup3.png';
-import VidgeMockup4 from '../assets/VidgeMockup4.png';
-import VidgeMockup5 from '../assets/VidgeMockup5.png';
-import VidgeMockup6 from '../assets/VidgeMockup6.png';
-import VidgeMockup7 from '../assets/VidgeMockup7.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../App.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const VidgeAI2 = () => {
     useEffect(() => {
@@ -19,13 +12,13 @@ const VidgeAI2 = () => {
     }, []);
 
     const images = [
-        { src: VidgeMockup, alt: "Karate Website Page 3" },
-        { src: VidgeMockup2, alt: "Karate Website Page 3" },
-        { src: VidgeMockup3, alt: "Karate Website Page 3" },
-        { src: VidgeMockup4, alt: "Karate Website Page 3" },
-        { src: VidgeMockup5, alt: "Karate Website Page 3" },
-        { src: VidgeMockup6, alt: "Karate Website Page 3" },
-        { src: VidgeMockup7, alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/VidgeMockup.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/VidgeMockup2.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/VidgeMockup3.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/VidgeMockup4.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/VidgeMockup5.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/VidgeMockup6.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/VidgeMockup7.png", alt: "Karate Website Page 3" },
     ];
 
     return (
@@ -35,7 +28,7 @@ const VidgeAI2 = () => {
                     <div className='h-1/6 pl-5 pt-5 w-full' data-aos="fade-down">
                         <div className='flex flex-row gap-3 items-center'>
                             <div className='h-1/2' data-aos="zoom-in">
-                                <img src={VidgeAILogo} alt="Slika" className='w-full h-full' />
+                                <LazyLoadImage src="https://abdulahportfolio.blob.core.windows.net/portfolio/VidgeAILogo.png" alt="Slika" className='w-full h-full' />
                             </div>
                             <div className='flex flex-col lg:gap-0 gap-2' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-down">
                                 <p className='lg:text-xl font-bold'>VidgeAI</p>
@@ -65,7 +58,7 @@ const VidgeAI2 = () => {
                                     showArrows={false}
                                 >
                                     {images.map((image, index) => (
-                                        <img
+                                        <LazyLoadImage
                                             key={index}
                                             src={image.src}
                                             alt={image.alt}

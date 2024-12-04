@@ -1,17 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
 import { Carousel } from 'react-responsive-carousel';
-import RdOnlineTV1 from '../assets/Rd1.png';
-import RdOnlineTV2 from '../assets/Rd2.png';
-import RdOnlineTV3 from '../assets/Rd3.png';
-import RdOnlineTV7 from '../assets/Rd7.png';
-import RdOnlineTV8 from '../assets/Rd8.png';
-import RdOnlineTV9 from '../assets/Rd9.png';
-import RdOnlineTV10 from '../assets/Rd10.png';
-import RDOnlineTVLogo from '../assets/RDOnlineTVLogo.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../App.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const RDOnlineTV2 = () => {
     useEffect(() => {
@@ -25,7 +18,7 @@ const RDOnlineTV2 = () => {
                     <div className='h-1/6 pl-5 pt-5 w-full' data-aos="fade-down">
                         <div className='flex flex-row gap-3 items-center'>
                             <div className='h-1/2' data-aos="zoom-in">
-                                <img src={RDOnlineTVLogo} alt="Slika" className='w-full h-full' />
+                                <LazyLoadImage src="https://abdulahportfolio.blob.core.windows.net/portfolio/RDOnlineTVLogo.png" alt="Slika" className='w-full h-full' />
                             </div>
                             <div className='flex flex-col lg:gap-0 gap-2' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-down">
                                 <p className='lg:text-xl font-bold'>RDOnlineTV</p>
@@ -55,48 +48,48 @@ const RDOnlineTV2 = () => {
                                     showArrows={false}
                                 >
                                     {/* Larger Images */}
-                                    <img
+                                    <LazyLoadImage effect='blur'
                                         className="!w-5/6 mx-auto"
                                         style={{ width: '83.333%' }}
-                                        src={RdOnlineTV3}
+                                        src="https://abdulahportfolio.blob.core.windows.net/portfolio/Rd3.png"
                                         alt="Karate Website Page 3"
                                     />
-                                    <img
+                                    <LazyLoadImage effect='blur'
                                         className="!w-5/6 mx-auto"
                                         style={{ width: '83.333%' }}
-                                        src={RdOnlineTV1}
+                                        src="https://abdulahportfolio.blob.core.windows.net/portfolio/Rd1.png"
                                         alt="Karate Website Page 3"
                                     />
-                                    <img
+                                    <LazyLoadImage effect='blur'
                                         className="!w-5/6 mx-auto"
                                         style={{ width: '83.333%' }}
-                                        src={RdOnlineTV2}
+                                        src="https://abdulahportfolio.blob.core.windows.net/portfolio/Rd2.png"
                                         alt="Karate Website Page 3"
                                     />
 
                                     {/* Smaller Images */}
-                                    <img
+                                    <LazyLoadImage effect='blur'
                                         className="!w-1/4 mx-auto"
                                         style={{ width: '25%' }}
-                                        src={RdOnlineTV10}
+                                        src="https://abdulahportfolio.blob.core.windows.net/portfolio/Rd10.png"
                                         alt="Karate Website Page 3"
                                     />
-                                    <img
+                                    <LazyLoadImage effect='blur'
                                         className="!w-1/4 mx-auto"
                                         style={{ width: '25%' }}
-                                        src={RdOnlineTV7}
+                                        src="https://abdulahportfolio.blob.core.windows.net/portfolio/Rd7.png"
                                         alt="Karate Website Page 3"
                                     />
-                                    <img
+                                    <LazyLoadImage effect='blur'
                                         className="!w-1/4 mx-auto"
                                         style={{ width: '25%' }}
-                                        src={RdOnlineTV8}
+                                        src="https://abdulahportfolio.blob.core.windows.net/portfolio/Rd8.png"
                                         alt="Karate Website Page 3"
                                     />
-                                    <img
+                                    <LazyLoadImage effect='blur'
                                         className="!w-1/4 mx-auto"
                                         style={{ width: '25%' }}
-                                        src={RdOnlineTV9}
+                                        src="https://abdulahportfolio.blob.core.windows.net/portfolio/Rd9.png"
                                         alt="Karate Website Page 3"
                                     />
                                 </Carousel>

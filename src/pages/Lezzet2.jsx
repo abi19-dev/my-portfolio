@@ -1,21 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
 import { Carousel } from 'react-responsive-carousel';
-import Lezzet1 from '../assets/Lezzet1.png';
-import Lezzet2 from '../assets/Lezzet2.png';
-import Lezzet3 from '../assets/Lezzet3.png';
-import Lezzet4 from '../assets/Lezzet4.png';
-import Lezzet5 from '../assets/Lezzet5.png';
-import Lezzet6 from '../assets/Lezzet6.png';
-import Lezzet7 from '../assets/Lezzet7.png';
-import Lezzet8 from '../assets/Lezzet8.png';
-import Lezzet9 from '../assets/Lezzet9.png';
-import Lezzet10 from '../assets/Lezzet10.png';
-import Lezzet11 from '../assets/Lezzet11.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import LezzetLogo from '../assets/LezzetLogo.png';
 import '../App.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Lezzet2Page = () => {
     useEffect(() => {
@@ -23,17 +12,17 @@ const Lezzet2Page = () => {
     }, []);
 
     const images = [
-        { src: Lezzet8, alt: "Karate Website" },
-        { src: Lezzet9, alt: "Karate Website Page 2" },
-        { src: Lezzet1, alt: "Karate Website Page 3" },
-        { src: Lezzet2, alt: "Karate Website Page 3" },
-        { src: Lezzet3, alt: "Karate Website Page 3" },
-        { src: Lezzet4, alt: "Karate Website Page 3" },
-        { src: Lezzet5, alt: "Karate Website Page 3" },
-        { src: Lezzet6, alt: "Karate Website Page 3" },
-        { src: Lezzet7, alt: "Karate Website Page 3" },
-        { src: Lezzet11, alt: "Karate Website Page 3" },
-        { src: Lezzet10, alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet8.png", alt: "Karate Website" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet9.png", alt: "Karate Website Page 2" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet1.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet2.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet3.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet4.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet5.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet6.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet7.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet11.png", alt: "Karate Website Page 3" },
+        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet10.png", alt: "Karate Website Page 3" },
     ];
 
     return (
@@ -43,7 +32,7 @@ const Lezzet2Page = () => {
                     <div className='h-1/6 pl-5 pt-5 w-full' data-aos="fade-down">
                         <div className='flex flex-row gap-3 items-center'>
                             <div className='h-1/2' data-aos="zoom-in">
-                                <img src={LezzetLogo} alt="Slika" className='w-full h-full' />
+                                <LazyLoadImage src="https://abdulahportfolio.blob.core.windows.net/portfolio/LezzetLogo.png" alt="Slika" className='w-full h-full' />
                             </div>
                             <div className='flex flex-col lg:gap-0 gap-2' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-down">
                                 <p className='lg:text-xl font-bold'>Lezzet</p>
@@ -74,7 +63,7 @@ const Lezzet2Page = () => {
                                     showArrows={false}
                                 >
                                     {images.map((image, index) => (
-                                        <img
+                                        <LazyLoadImage effect='blur'
                                             key={index}
                                             src={image.src}
                                             alt={image.alt}

@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Thnx1 from '../assets/Thnx.png';
 import '../App.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Thnx = () => {
     useEffect(() => {
@@ -14,7 +14,7 @@ const Thnx = () => {
         <>
             <div className='flex flex-col w-full h-screen'>
                 <div className='flex flex-col bg-black-1000 justify-center items-center h-screen' data-aos="fade-in">
-                    <img src={Thnx1} alt="Slika" className='' />
+                    <LazyLoadImage src="https://abdulahportfolio.blob.core.windows.net/portfolio/Thnx.png" alt="Slika" className='' />
                 </div>
                 <div className='flex flex-col lg:pl-32 gap-10 pb-10' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
                     <p className='text-myGrey-1000 lg:text-start text-center'>For other material and files like prototypes, wireframes and ... please contact me</p>

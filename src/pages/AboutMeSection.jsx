@@ -34,7 +34,7 @@ const AboutMeSection = () => {
                         <div className="info-item flex flex-col items-center" data-aos="fade-right">
                             <h3 className="text-yellow-400 lg:text-sm text-xs lg:mb-2">FAMILIAR WITH</h3>
                             <p className="lg:text-sm text-xs font-bold text-center">
-                                React, React Native, JavaScript, C++, C#, HTML/CSS, Figma
+                                React, React Native, JavaScript, Node.js, Express.js, C++, C#, HTML/CSS, Figma
                             </p>
                         </div>
                         <div className="info-item flex flex-col items-center" data-aos="fade-up">

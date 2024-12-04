@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import HomeSection from './pages/HomeSection'
 import AboutMeSection from './pages/AboutMeSection'
 import './App.css'
@@ -19,6 +20,24 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 7000); // 7 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="loading-screen flex items-center justify-center h-screen bg-black-1000">
+        <h1 className="text-white text-4xl">Loading...</h1>
+      </div>
+    );
+  }
+
   return (
     <>
       <section id="home" className="h-screen flex items-center justify-center bg-black-1000">
