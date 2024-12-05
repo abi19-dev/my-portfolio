@@ -15,7 +15,7 @@ const KarateBHWebsite = () => {
             <div className='flex flex-col w-full h-screen bg-black-1000'>
                 <div className='flex lg:flex-row flex-col h-[90%] bg-black-1000 lg:justify-center items-center'>
                     <div className='lg:w-1/2 h-[45%] flex flex-col lg:justify-center justify-start items-center' data-aos="fade-down"><img effect='blur'
-                        src="https://abdulahportfolio.blob.core.windows.net/portfolio/KarateWebsite.png"
+                        src="https://abdulahportfolio.blob.core.windows.net/portfolio/KarateWebsite.webp"
                         alt="Desktop View"
                         className='hidden lg:block w-full'
                     />

@@ -12,16 +12,16 @@ const HomeSection = () => {
 
     return (
         <>
-            <section className='flex flex-col h-screen bg-black-1000 justify-center lg:items-start items-center w-full gap-5'>
+            <section className='flex flex-col h-screen bg-black-1000 justify-center lg:items-start items-center w-full'>
                 <div className='flex lg:flex-row flex-col justify-center align-middle items-center lg:w-full w-5/6 h-[95%] gap-5'>
-                    <div className='lg:w-1/2 flex flex-col justify-center items-center h-full lg:pt-0 pt-2' data-aos="fade-right">
+                    <div className='lg:w-1/2 flex flex-col justify-center items-center' data-aos="fade-right">
                         <div className='flex flex-col gap-5'>
-                            <div className='flex flex-col justify-center text-left' data-aos="fade-up">
-                                <p className='lg:text-6xl text-3xl text-yellow-400' style={{ fontFamily: "'Kaushan Script', cursive" }}>Abdulah Đulović</p>
+                            <div className='flex flex-col justify-center lg:text-left text-center' data-aos="fade-up">
+                                <p className='lg:text-6xl text-4xl text-yellow-400' style={{ fontFamily: "'Kaushan Script', cursive" }}>Abdulah Đulović</p>
                                 <p className='lg:text-3xl text-[rgba(255,255,255,0.26)]' style={{ fontFamily: "'Fredoka', cursive" }}>Student of Information Technologies</p>
                             </div>
                             <div className='flex flex-col gap-2' data-aos="zoom-in">
-                                <div className='uppercase flex flex-col gap-2 cursor-pointer lg:text-base text-sm' style={{ fontFamily: "'Fredoka', cursive" }}>
+                                <div className='uppercase flex flex-col gap-2 lg:items-start items-center cursor-pointer lg:text-base text-sm' style={{ fontFamily: "'Fredoka', cursive" }}>
                                     <Link
                                         to="about"
                                         smooth={true}
@@ -39,11 +39,11 @@ const HomeSection = () => {
                                         Experience
                                     </Link>
                                 </div>
-                                <div className='flex flex-row gap-3'>
-                                    <div className='text-yellow-400'>
+                                <div className='flex flex-row gap-3 lg:justify-start justify-center'>
+                                    <div className='text-yellow-400 lg:block hidden'>
                                         <div className='h-full bg-yellow-400 w-1 rounded-xl'></div>
                                     </div>
-                                    <ul className='uppercase flex flex-col gap-2 cursor-pointer lg:text-base text-sm' style={{ fontFamily: "'Fredoka', cursive" }}>
+                                    <ul className='uppercase flex flex-col gap-2 cursor-pointer lg:items-start items-center lg:text-base text-sm' style={{ fontFamily: "'Fredoka', cursive" }}>
                                         <li><Link
                                             to="karatebhapp"
                                             smooth={true}
@@ -87,7 +87,7 @@ const HomeSection = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className='flex flex-col lg:items-end lg:justify-end gap-10 justify-center items-center lg:pt-10' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
+                            <div className=' lg:block hidden' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
                                 <div className='w-full flex lg:flex-row justify-start items-start flex-col gap-5'>
                                     <div className='flex flex-col lg:justify-start justify-center lg:items-start items-center w-full'>
                                         <p className='text-yellow-400'>EMAIL</p>
@@ -101,9 +101,21 @@ const HomeSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='lg:w-1/2 flex justify-center items-center h-full'>
+                    <div className='lg:w-1/2 flex justify-center items-center'>
                         <div className="relative lg:w-[500px] lg:h-[500px] w-full h-[200px] flex lg:justify-center lg:items-center overflow-hidden lg:rounded-full rounded-md border-4 border-yellow-400" data-aos="fade-left">
                             <img src="https://abdulahportfolio.blob.core.windows.net/portfolio/Ja.jpg" alt="Slika" className='lg:rounded-full w-full h-full object-cover' />
+                        </div>
+                    </div>
+                    <div className=' lg:hidden block' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
+                        <div className='w-full flex lg:flex-row justify-start items-start flex-col gap-5'>
+                            <div className='flex flex-col lg:justify-start justify-center lg:items-start items-center w-full'>
+                                <p className='text-yellow-400'>EMAIL</p>
+                                <p className='flex font-bold'>abdulahdulovic<p className='text-myGrey-1000'>@gmail.com</p></p>
+                            </div>
+                            <div className='flex flex-col lg:justify-start justify-center lg:items-start items-center w-full'>
+                                <p className='text-yellow-400'>PHONE</p>
+                                <p className='flex gap-1 font-bold'><p className='text-myGrey-1000'>(387)</p>60 34 83 487</p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -35,7 +35,7 @@ function App() {
   if (isLoading) {
     return (
       <div className="loading-screen flex items-center justify-center h-screen bg-black-1000">
-        <LazyLoadImage className='h-1/2 rounded-full border-yellow-400 border-8' src={Karikatura} />
+        <LazyLoadImage className='lg:h-1/2 lg:w-fit w-1/2 h-fit rounded-full border-yellow-400 border-8' src={Karikatura} />
       </div>
     );
   }
