@@ -28,7 +28,7 @@ const Lezzet2Page = () => {
     return (
         <>
             <div className='flex flex-col w-full bg-black-1000 h-screen'>
-                <div className='flex flex-col h-[90%] lg:justify-between items-center lg:gap-0 gap-2'>
+                <div className='flex flex-col h-[90%] lg:justify-between items-center lg:gap-0 gap-10'>
                     <div className='lg:h-[20%] h-[15%] w-full flex items-center pl-5 pt-3' data-aos="fade-down">
                         <div className='flex flex-row gap-3 items-center lg:h-full'>
                             <div className='h-full' data-aos="zoom-in">
@@ -50,7 +50,7 @@ const Lezzet2Page = () => {
                                 <p className='flex items-start gap-2'><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brackets-angle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 4l-5 8l5 8" /><path d="M16 4l5 8l-5 8" /></svg></p>Gained hands-on experience in full-stack development while delivering a practical solution tailored to client needs</p>
                             </div>
                         </div>
-                        <div className='lg:w-1/2 flex justify-center items-center lg:h-full' data-aos="fade-down">
+                        <div className='lg:w-1/2 flex justify-center items-center h-full' data-aos="fade-down">
                             <div className='w-2/3  lg:h-full flex items-center'>
                                 <Carousel
                                     autoPlay

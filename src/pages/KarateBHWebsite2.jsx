@@ -36,7 +36,7 @@ const KarateBHWebsite2 = () => {
     return (
         <>
             <div className='flex flex-col w-full bg-black-1000 h-screen'>
-                <div className='flex flex-col h-[90%] lg:justify-between items-center lg:gap-0 gap-2'>
+                <div className='flex flex-col h-[90%] lg:justify-between items-center lg:gap-0 gap-10'>
                     <div className='lg:h-[20%] h-[15%] w-full flex items-center pl-5 pt-3' data-aos="fade-down">
                         <div className='flex flex-row gap-3 items-center lg:h-full'>
                             <div className='h-full' data-aos="zoom-in">
@@ -58,7 +58,7 @@ const KarateBHWebsite2 = () => {
                                 <p className='flex items-start gap-2'><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users-group"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" /><path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M17 10h2a2 2 0 0 1 2 2v1" /><path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M3 13v-1a2 2 0 0 1 2 -2h2" /></svg></p>Collaborated effectively in a team environment, honing teamwork and project coordination skills</p>
                             </div>
                         </div>
-                        <div className='lg:w-1/2 flex justify-center items-center lg:h-full' data-aos="fade-down">
+                        <div className='lg:w-1/2 flex justify-center items-center h-full' data-aos="fade-down">
                             <div className='w-5/6  lg:h-full flex items-center'>
                                 <Carousel
                                     autoPlay

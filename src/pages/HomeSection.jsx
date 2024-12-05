@@ -13,7 +13,7 @@ const HomeSection = () => {
     return (
         <>
             <section className='flex flex-col h-screen bg-black-1000 justify-center lg:items-start items-center w-full gap-5'>
-                <div className='flex lg:flex-row flex-col justify-center align-middle items-center lg:w-full w-5/6 h-[90%] gap-5'>
+                <div className='flex lg:flex-row flex-col justify-center align-middle items-center lg:w-full w-5/6 h-[95%] gap-5'>
                     <div className='lg:w-1/2 flex flex-col justify-center items-center h-full lg:pt-0 pt-2' data-aos="fade-right">
                         <div className='flex flex-col gap-5'>
                             <div className='flex flex-col justify-center text-left' data-aos="fade-up">
@@ -107,7 +107,7 @@ const HomeSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-end pb-2 cursor-pointer h-[10%] w-full items-end' >
+                <div className='flex justify-end pb-2 cursor-pointer h-[5%] w-full items-end' >
                     <Link
                         to="about"
                         smooth={true}
