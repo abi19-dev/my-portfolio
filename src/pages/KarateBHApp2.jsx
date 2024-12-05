@@ -19,20 +19,20 @@ const KarateBHApp2 = () => {
 
     return (
         <>
-            <div className='flex flex-col w-full h-screen bg-black-1000'>
-                <div className='flex flex-col h-screen bg-black-1000 justify-between items-center gap-10'>
-                    <div className='h-1/6 pl-5 pt-5 w-full' data-aos="fade-down">
-                        <div className='flex flex-row gap-3 items-center'>
-                            <div className='h-1/2' data-aos="zoom-in">
-                                <LazyLoadImage src="https://abdulahportfolio.blob.core.windows.net/portfolio/karatebhappicon.png" alt="Slika" className='w-full h-full' />
+            <div className='flex flex-col w-full bg-black-1000 h-screen'>
+                <div className='flex flex-col h-[90%] lg:justify-between items-center lg:gap-0 gap-2'>
+                    <div className='lg:h-[20%] h-[15%] w-full flex items-center pl-5 pt-3' data-aos="fade-down">
+                        <div className='flex flex-row gap-3 items-center lg:h-full'>
+                            <div className='h-full' data-aos="zoom-in">
+                                <img src="https://abdulahportfolio.blob.core.windows.net/portfolio/karatebhappicon.png" alt="Slika" className='w-full h-full' />
                             </div>
                             <div className='flex flex-col lg:gap-0 gap-2' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-down">
                                 <p className='lg:text-xl font-bold'>KarateBH App</p>
-                                <p className='lg:text-base text-sm'>With sports values, we strengthen society – together</p>
+                                <p className='lg:text-base text-xs'>With sports values, we strengthen society – together</p>
                             </div>
                         </div>
                     </div>
-                    <div className='w-full h-full flex lg:flex-row flex-col lg:justify-center items-center gap-10'>
+                    <div className='w-full lg:h-[80%] h-[85%] flex lg:flex-row flex-col lg:justify-center items-center lg:gap-10'>
                         <div className='lg:w-1/2 flex flex-col justify-center items-center gap-3 lg:gap-5' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
                             <p className='lg:text-6xl font-bold'>What did I learn?</p>
                             <div className='w-5/6 flex flex-col gap-2 text-sm lg:text-lg'>
@@ -42,8 +42,8 @@ const KarateBHApp2 = () => {
                                 <p className='flex items-start gap-2'><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-list-tree"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 6h11" /><path d="M12 12h8" /><path d="M15 18h5" /><path d="M5 6v.01" /><path d="M8 12v.01" /><path d="M11 18v.01" /></svg></p>Development of a functional mobile application for organization and communication within the federation</p>
                             </div>
                         </div>
-                        <div className='lg:w-1/2 flex justify-center items-center' data-aos="fade-down">
-                            <div className='w-2/3 h-full'>
+                        <div className='lg:w-1/2 flex justify-center items-center lg:h-full' data-aos="fade-down">
+                            <div className='w-2/3  lg:h-full flex items-center'>
                                 <Carousel
                                     autoPlay
                                     infiniteLoop
@@ -54,10 +54,11 @@ const KarateBHApp2 = () => {
                                     showArrows={false}
                                 >
                                     {images.map((image, index) => (
-                                        <LazyLoadImage effect='blur'
+                                        <img effect='blur'
                                             key={index}
                                             src={image.src}
                                             alt={image.alt}
+                                            className=' lg:h-full'
                                         />
                                     ))}
                                 </Carousel>
@@ -65,7 +66,7 @@ const KarateBHApp2 = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full flex justify-between pb-2 cursor-pointer'>
+                <div className='w-full flex justify-between pb-2 cursor-pointer items-end h-[10%]'>
                     <Link
                         to="home"
                         smooth={true}

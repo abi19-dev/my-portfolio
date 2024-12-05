@@ -13,10 +13,10 @@ const Thnx = () => {
     return (
         <>
             <div className='flex flex-col w-full h-screen'>
-                <div className='flex flex-col bg-black-1000 justify-center items-center h-screen' data-aos="fade-in">
-                    <LazyLoadImage src="https://abdulahportfolio.blob.core.windows.net/portfolio/Thnx.png" alt="Slika" className='' />
+                <div className='flex flex-col bg-black-1000 justify-center items-center lg:h-[70%] h-[50%]' data-aos="fade-in">
+                    <img src="https://abdulahportfolio.blob.core.windows.net/portfolio/Thnx.png" alt="Slika" className='' />
                 </div>
-                <div className='flex flex-col lg:pl-32 gap-10 pb-10' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
+                <div className='flex flex-col lg:pl-32 gap-10 lg:h-[20%] h-[40%] justify-center' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
                     <p className='text-myGrey-1000 lg:text-start text-center'>For other material and files like prototypes, wireframes and ... please contact me</p>
                     <div className='w-full flex lg:flex-row flex-col lg:gap-32 gap-10'>
                         <div className='text-center lg:text-start flex flex-col lg:justify-start justify-center items-center lg:items-start'>
@@ -30,7 +30,7 @@ const Thnx = () => {
                     </div>
 
                 </div>
-                <div className='w-full flex justify-between pb-2 cursor-pointer'>
+                <div className='flex items-end pb-2 cursor-pointer h-[10%] w-full'>
                     <Link
                         to="home"
                         smooth={true}

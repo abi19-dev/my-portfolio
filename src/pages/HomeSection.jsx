@@ -13,8 +13,8 @@ const HomeSection = () => {
     return (
         <>
             <section className='flex flex-col h-screen bg-black-1000 justify-center lg:items-start items-center w-full gap-5'>
-                <div className='flex lg:flex-row flex-col justify-center align-middle items-center lg:w-full w-5/6 lg:h-4/5 gap-5'>
-                    <div className='lg:w-1/2 flex flex-col justify-center items-center' data-aos="fade-right">
+                <div className='flex lg:flex-row flex-col justify-center align-middle items-center lg:w-full w-5/6 h-[90%] gap-5'>
+                    <div className='lg:w-1/2 flex flex-col justify-center items-center h-full lg:pt-0 pt-2' data-aos="fade-right">
                         <div className='flex flex-col gap-5'>
                             <div className='flex flex-col justify-center text-left' data-aos="fade-up">
                                 <p className='lg:text-6xl text-3xl text-yellow-400' style={{ fontFamily: "'Kaushan Script', cursive" }}>Abdulah Đulović</p>
@@ -87,27 +87,27 @@ const HomeSection = () => {
                                     </ul>
                                 </div>
                             </div>
+                            <div className='flex flex-col lg:items-end lg:justify-end gap-10 justify-center items-center lg:pt-10' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
+                                <div className='w-full flex lg:flex-row justify-start items-start flex-col gap-5'>
+                                    <div className='flex flex-col lg:justify-start justify-center lg:items-start items-center w-full'>
+                                        <p className='text-yellow-400'>EMAIL</p>
+                                        <p className='flex font-bold'>abdulahdulovic<p className='text-myGrey-1000'>@gmail.com</p></p>
+                                    </div>
+                                    <div className='flex flex-col lg:justify-start justify-center lg:items-start items-center w-full'>
+                                        <p className='text-yellow-400'>PHONE</p>
+                                        <p className='flex gap-1 font-bold'><p className='text-myGrey-1000'>(387)</p>60 34 83 487</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className='lg:w-1/2 lg:pt-5 relative flex justify-center items-center'>
+                    <div className='lg:w-1/2 flex justify-center items-center h-full'>
                         <div className="relative lg:w-[500px] lg:h-[500px] w-full h-[200px] flex lg:justify-center lg:items-center overflow-hidden lg:rounded-full rounded-md border-4 border-yellow-400" data-aos="fade-left">
-                            <LazyLoadImage src="https://abdulahportfolio.blob.core.windows.net/portfolio/Ja.jpg" alt="Slika" className='lg:rounded-full w-full h-full object-cover' />
+                            <img src="https://abdulahportfolio.blob.core.windows.net/portfolio/Ja.jpg" alt="Slika" className='lg:rounded-full w-full h-full object-cover' />
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col lg:h-1/5 lg:items-end lg:justify-end gap-10 justify-center items-center lg:pb-14 lg:pl-8' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
-                    <div className='w-full flex lg:flex-row justify-start items-start flex-col lg:pl-32 lg:gap-32 gap-5'>
-                        <div className='flex flex-col lg:justify-start justify-center lg:items-start items-center'>
-                            <p className='text-yellow-400'>EMAIL</p>
-                            <p className='flex font-bold'>abdulahdulovic<p className='text-myGrey-1000'>@gmail.com</p></p>
-                        </div>
-                        <div className='flex flex-col lg:justify-start justify-center lg:items-start items-center w-full'>
-                            <p className='text-yellow-400'>PHONE</p>
-                            <p className='flex gap-1 font-bold'><p className='text-myGrey-1000'>(387)</p>60 34 83 487</p>
-                        </div>
-                    </div>
-                </div>
-                <div className='lg:flex lg:relative justify-end cursor-pointer mb-2 absolute bottom-0 w-full' >
+                <div className='flex justify-end pb-2 cursor-pointer h-[10%] w-full items-end' >
                     <Link
                         to="about"
                         smooth={true}

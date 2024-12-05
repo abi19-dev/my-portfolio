@@ -11,8 +11,8 @@ const AboutMeSection = () => {
 
     return (
         <>
-            <div className='lg:h-screen flex flex-col items-center justify-center'>
-                <div className='flex flex-col w-full lg:h-4/5 lg:justify-center items-center lg:gap-0 gap-10'>
+            <div className='h-screen flex flex-col items-center justify-center'>
+                <div className='flex flex-col w-full h-[90%] justify-center items-center lg:gap-0 gap-10'>
                     <div className='flex flex-col lg:h-screen justify-center items-center'>
                         <div className='lg:w-3/5 w-5/6 flex items-center justify-center text-center lg:text-2xl' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
                             I am 21 years old third year student of Faculty of Information Technology in Mostar. I am interested in programming and information technologies. Almost with each step that I take in my daily life, technology comes in sight and I am continuously mesmerized by the whole effect it has on our everyday society.
@@ -52,7 +52,7 @@ const AboutMeSection = () => {
 
                     </div>
                 </div>
-                <div className='w-full flex justify-between pb-2 h-full items-end absolute '>
+                <div className='w-full flex justify-between h-[10%] items-end pb-2'>
                     <Link
                         to="home"
                         smooth={true}

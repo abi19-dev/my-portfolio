@@ -12,12 +12,12 @@ const ExperienceHome = () => {
     return (
         <>
             <div className='flex flex-col w-full h-screen'>
-                <div className='flex flex-col h-screen bg-black-1000 justify-center items-center' data-aos="fade-in">
+                <div className='flex flex-col h-[90%] bg-black-1000 justify-center items-center' data-aos="fade-in">
                     <div className='flex items-center justify-center text-center font-bold lg:text-9xl text-6xl text-yellow-400' style={{ fontFamily: "'Kaushan Script', cursive" }} data-aos="zoom-in">
                         Experience
                     </div>
                 </div>
-                <div className='w-full flex justify-between pb-2 cursor-pointer'>
+                <div className='w-full flex justify-between pb-2 cursor-pointer h-[10%] items-end'>
                     <Link
                         to="home"
                         smooth={true}
