@@ -17,6 +17,10 @@ import Lezzet from './pages/Lezzet'
 import Lezzet2 from './pages/Lezzet2'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import ParticleBackground from './components/ParticleBackground';
+import FloatingShapes from './components/FloatingShapes';
+import MouseFollower from './components/MouseFollower';
+import SpecialEffects from './components/SpecialEffects';
 
 
 
@@ -35,13 +39,21 @@ function App() {
   if (isLoading) {
     return (
       <div className="loading-screen flex items-center justify-center h-screen bg-black-1000">
-        <LazyLoadImage className='lg:h-1/2 lg:w-fit w-1/2 h-fit rounded-full border-yellow-400 border-8' src={Karikatura} />
+        <ParticleBackground />
+        <SpecialEffects />
+        <LazyLoadImage className='lg:h-1/2 lg:w-fit w-1/2 h-fit rounded-full border-yellow-400 border-8 profile-image relative z-20' src={Karikatura} />
       </div>
     );
   }
 
   return (
     <>
+      {/* Background Animations */}
+      <ParticleBackground />
+      <FloatingShapes />
+      <SpecialEffects />
+      <MouseFollower />
+      
       <section id="home" className="h-screen flex items-center justify-center bg-black-1000">
         <HomeSection />
       </section>
