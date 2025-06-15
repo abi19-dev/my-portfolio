@@ -17,8 +17,8 @@ const HomeSection = () => {
                     <div className='lg:w-1/2 flex flex-col justify-center items-center' data-aos="fade-right">
                         <div className='flex flex-col gap-5'>
                             <div className='flex flex-col justify-center lg:text-left text-center' data-aos="fade-up">
-                                <p className='lg:text-6xl text-4xl text-yellow-400' style={{ fontFamily: "'Kaushan Script', cursive" }}>Abdulah Đulović</p>
-                                <p className='lg:text-3xl text-[rgba(255,255,255,0.26)]' style={{ fontFamily: "'Fredoka', cursive" }}>Student of Information Technologies</p>
+                                <p className='lg:text-6xl text-4xl text-yellow-400 typing-animation' style={{ fontFamily: "'Kaushan Script', cursive" }}>Abdulah Đulović</p>
+                                <p className='lg:text-3xl text-[rgba(255,255,255,0.26)] hover:text-white transition-colors duration-300' style={{ fontFamily: "'Fredoka', cursive" }}>Student of Information Technologies</p>
                             </div>
                             <div className='flex flex-col gap-2' data-aos="zoom-in">
                                 <div className='uppercase flex flex-col gap-2 lg:items-start items-center cursor-pointer lg:text-base text-sm' style={{ fontFamily: "'Fredoka', cursive" }}>
@@ -26,7 +26,7 @@ const HomeSection = () => {
                                         to="about"
                                         smooth={true}
                                         duration={500}
-                                        className="hover:text-yellow-400"
+                                        className="hover:text-yellow-400 btn-hover px-3 py-1 rounded transition-all duration-300"
                                     >
                                         About Me
                                     </Link>
@@ -34,7 +34,7 @@ const HomeSection = () => {
                                         to="experience"
                                         smooth={true}
                                         duration={500}
-                                        className="hover:text-yellow-400"
+                                        className="hover:text-yellow-400 btn-hover px-3 py-1 rounded transition-all duration-300"
                                     >
                                         Experience
                                     </Link>
@@ -48,7 +48,7 @@ const HomeSection = () => {
                                             to="karatebhapp"
                                             smooth={true}
                                             duration={500}
-                                            className="hover:text-yellow-400"
+                                            className="hover:text-yellow-400 btn-hover px-3 py-1 rounded transition-all duration-300 project-card"
                                         >
                                             KarateBH App
                                         </Link></li>
@@ -56,7 +56,7 @@ const HomeSection = () => {
                                             to="karatebhwebsite"
                                             smooth={true}
                                             duration={500}
-                                            className="hover:text-yellow-400"
+                                            className="hover:text-yellow-400 btn-hover px-3 py-1 rounded transition-all duration-300 project-card"
                                         >
                                             KarateBH Website
                                         </Link></li>
@@ -64,7 +64,7 @@ const HomeSection = () => {
                                             to="lezzet"
                                             smooth={true}
                                             duration={500}
-                                            className="hover:text-yellow-400"
+                                            className="hover:text-yellow-400 btn-hover px-3 py-1 rounded transition-all duration-300 project-card"
                                         >
                                             Lezzet Website
                                         </Link></li>
@@ -72,7 +72,7 @@ const HomeSection = () => {
                                             to="vidgeai"
                                             smooth={true}
                                             duration={500}
-                                            className="hover:text-yellow-400"
+                                            className="hover:text-yellow-400 btn-hover px-3 py-1 rounded transition-all duration-300 project-card"
                                         >
                                             VidgeAI
                                         </Link></li>
@@ -80,7 +80,7 @@ const HomeSection = () => {
                                             to="rdonlinetv"
                                             smooth={true}
                                             duration={500}
-                                            className="hover:text-yellow-400"
+                                            className="hover:text-yellow-400 btn-hover px-3 py-1 rounded transition-all duration-300 project-card"
                                         >
                                             RDOnlineTV Website
                                         </Link></li>
@@ -102,8 +102,8 @@ const HomeSection = () => {
                         </div>
                     </div>
                     <div className='lg:w-1/2 flex justify-center items-center'>
-                        <div className="relative lg:w-[500px] lg:h-[500px] w-full h-[200px] flex lg:justify-center lg:items-center overflow-hidden lg:rounded-full rounded-md border-4 border-yellow-400" data-aos="fade-left">
-                            <img src="https://abdulahportfolio.blob.core.windows.net/portfolio/Ja.jpg" alt="Slika" className='lg:rounded-full w-full h-full object-cover' />
+                        <div className="relative lg:w-[500px] lg:h-[500px] w-full h-[200px] flex lg:justify-center lg:items-center overflow-hidden lg:rounded-full rounded-md border-4 border-yellow-400 profile-image" data-aos="fade-left">
+                            <img src="https://abdulahportfolio.blob.core.windows.net/portfolio/Ja.jpg" alt="Slika" className='lg:rounded-full w-full h-full object-cover relative z-10' />
                         </div>
                     </div>
                     <div className=' lg:hidden block' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
