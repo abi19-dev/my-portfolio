@@ -15,7 +15,7 @@ const AboutMeSection = () => {
                 <div className='flex flex-col w-full h-[90%] justify-center items-center lg:gap-0 gap-10'>
                     <div className='flex flex-col lg:h-screen justify-center items-center'>
                         <div className='lg:w-3/5 w-5/6 flex items-center justify-center text-center lg:text-2xl' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
-                            I am 21 years old third year student of Faculty of Information Technology in Mostar. I am interested in programming and information technologies. Almost with each step that I take in my daily life, technology comes in sight and I am continuously mesmerized by the whole effect it has on our everyday society.
+                            I am {new Date().getFullYear() - 2003} years old third year student of Faculty of Information Technology in Mostar. I am interested in programming and information technologies. Almost with each step that I take in my daily life, technology comes in sight and I am continuously mesmerized by the whole effect it has on our everyday society.
                         </div>
                     </div>
                     <div className="w-10/12 grid lg:grid-cols-3 lg:gap-12 grid-cols-1 gap-3 text-white lg:mb-10" style={{ fontFamily: "'Prompt', cursive" }} data-aos="zoom-in">
@@ -25,11 +25,11 @@ const AboutMeSection = () => {
                         </div>
                         <div className="info-item flex flex-col items-center" data-aos="fade-up">
                             <h3 className="text-yellow-400 lg:text-sm text-xs lg:mb-2">EXPERIENCE</h3>
-                            <p className="lg:text-sm text-xs font-bold">about 1 year</p>
+                            <p className="lg:text-sm text-xs font-bold">about {new Date().getFullYear() - 2023} years</p>
                         </div>
                         <div className="info-item flex flex-col items-center" data-aos="fade-left">
                             <h3 className="text-yellow-400 lg:text-sm text-xs lg:mb-2">DATE OF BIRTH</h3>
-                            <p className="lg:text-sm text-xs font-bold">Aug, 2003 – 21 years old</p>
+                            <p className="lg:text-sm text-xs font-bold">Aug, 2003 – {new Date().getFullYear() - 2003} years old</p>
                         </div>
                         <div className="info-item flex flex-col items-center" data-aos="fade-right">
                             <h3 className="text-yellow-400 lg:text-sm text-xs lg:mb-2">FAMILIAR WITH</h3>
@@ -46,7 +46,7 @@ const AboutMeSection = () => {
                         <div className="info-item flex flex-col items-center" data-aos="fade-left">
                             <h3 className="text-yellow-400 lg:text-sm text-xs lg:mb-2">CURRENTLY LEARNING</h3>
                             <p className="lg:text-sm text-xs font-bold">
-                                Angular, C#
+                                Angular
                             </p>
                         </div>
 

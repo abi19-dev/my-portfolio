@@ -45,6 +45,14 @@ const HomeSection = () => {
                                     </div>
                                     <ul className='uppercase flex flex-col gap-2 cursor-pointer lg:items-start items-center lg:text-base text-sm' style={{ fontFamily: "'Fredoka', cursive" }}>
                                         <li><Link
+                                            to="madinahguider"
+                                            smooth={true}
+                                            duration={500}
+                                            className="hover:text-yellow-400 btn-hover px-3 py-1 rounded transition-all duration-300 project-card"
+                                        >
+                                            MadinahGuider
+                                        </Link></li>
+                                        <li><Link
                                             to="karatebhapp"
                                             smooth={true}
                                             duration={500}
