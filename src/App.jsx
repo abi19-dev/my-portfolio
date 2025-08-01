@@ -15,6 +15,8 @@ import RDOnlineTV from './pages/RDOnlineTV'
 import RDOnlineTV2 from './pages/RDOnlineTV2'
 import Lezzet from './pages/Lezzet'
 import Lezzet2 from './pages/Lezzet2'
+import MadinahGudier from './pages/MadinahGudier'
+import MadinahGuider1 from './pages/MadinahGuider1'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import ParticleBackground from './components/ParticleBackground';
@@ -87,6 +89,18 @@ function App() {
         <header className="sr-only">
           <h2>Portfolio Projects by Abdulah Đulović</h2>
         </header>
+
+        {/* MadinahGuider Project */}
+        <article id="madinahguider" className="h-screen flex items-center justify-center bg-black-1000">
+          <header className="sr-only">
+            <h3>MadinahGuider Project</h3>
+          </header>
+          <MadinahGudier />
+        </article>
+
+        <article id="madinahguider1" className="h-screen flex items-center justify-center bg-black-1000">
+          <MadinahGuider1 />
+        </article>
 
         {/* KarateBH App Project */}
         <article id="karatebhapp" className="h-screen flex items-center justify-center bg-black-1000">
