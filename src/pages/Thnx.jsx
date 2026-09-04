@@ -14,7 +14,7 @@ const Thnx = () => {
         <>
             <div className='flex flex-col w-full h-screen'>
                 <div className='flex flex-col bg-black-1000 justify-center items-center lg:h-[70%] h-[50%]' data-aos="fade-in">
-                    <img src="https://abdulahportfolio.blob.core.windows.net/portfolio/Thnx.png" alt="Slika" className='' />
+                    <img src="https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Thnx.png" alt="Slika" className='' />
                 </div>
                 <div className='flex flex-col lg:pl-32 gap-10 lg:h-[20%] h-[40%] justify-center' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
                     <p className='text-myGrey-1000 lg:text-start text-center'>For other material and files like prototypes, wireframes and ... please contact me</p>

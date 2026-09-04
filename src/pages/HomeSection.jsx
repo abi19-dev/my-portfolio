@@ -18,7 +18,7 @@ const HomeSection = () => {
                         <div className='flex flex-col gap-5'>
                             <div className='flex flex-col justify-center lg:text-left text-center' data-aos="fade-up">
                                 <p className='lg:text-6xl text-4xl text-yellow-400 typing-animation' style={{ fontFamily: "'Kaushan Script', cursive" }}>Abdulah Đulović</p>
-                                <p className='lg:text-3xl text-[rgba(255,255,255,0.26)] hover:text-white transition-colors duration-300' style={{ fontFamily: "'Fredoka', cursive" }}>Student of Information Technologies</p>
+                                <p className='lg:text-3xl text-[rgba(255,255,255,0.26)] hover:text-white transition-colors duration-300' style={{ fontFamily: "'Fredoka', cursive" }}>Software Engineer</p>
                             </div>
                             <div className='flex flex-col gap-2' data-aos="zoom-in">
                                 <div className='uppercase flex flex-col gap-2 lg:items-start items-center cursor-pointer lg:text-base text-sm' style={{ fontFamily: "'Fredoka', cursive" }}>
@@ -44,6 +44,22 @@ const HomeSection = () => {
                                         <div className='h-full bg-yellow-400 w-1 rounded-xl'></div>
                                     </div>
                                     <ul className='uppercase flex flex-col gap-2 cursor-pointer lg:items-start items-center lg:text-base text-sm' style={{ fontFamily: "'Fredoka', cursive" }}>
+                                        <li><Link
+                                            to="quietparty"
+                                            smooth={true}
+                                            duration={500}
+                                            className="hover:text-yellow-400 btn-hover px-3 py-1 rounded transition-all duration-300 project-card"
+                                        >
+                                            The Quiet Party
+                                        </Link></li>
+                                        <li><Link
+                                            to="slibe"
+                                            smooth={true}
+                                            duration={500}
+                                            className="hover:text-yellow-400 btn-hover px-3 py-1 rounded transition-all duration-300 project-card"
+                                        >
+                                            Slibe
+                                        </Link></li>
                                         <li><Link
                                             to="madinahguider"
                                             smooth={true}
@@ -76,22 +92,6 @@ const HomeSection = () => {
                                         >
                                             Lezzet Website
                                         </Link></li>
-                                        <li><Link
-                                            to="vidgeai"
-                                            smooth={true}
-                                            duration={500}
-                                            className="hover:text-yellow-400 btn-hover px-3 py-1 rounded transition-all duration-300 project-card"
-                                        >
-                                            VidgeAI
-                                        </Link></li>
-                                        <li><Link
-                                            to="rdonlinetv"
-                                            smooth={true}
-                                            duration={500}
-                                            className="hover:text-yellow-400 btn-hover px-3 py-1 rounded transition-all duration-300 project-card"
-                                        >
-                                            RDOnlineTV Website
-                                        </Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -111,7 +111,7 @@ const HomeSection = () => {
                     </div>
                     <div className='lg:w-1/2 flex justify-center items-center'>
                         <div className="relative lg:w-[500px] lg:h-[500px] w-full h-[200px] flex lg:justify-center lg:items-center overflow-hidden lg:rounded-full rounded-md border-4 border-yellow-400 profile-image" data-aos="fade-left">
-                            <img src="https://abdulahportfolio.blob.core.windows.net/portfolio/Ja.jpg" alt="Slika" className='lg:rounded-full w-full h-full object-cover relative z-10' />
+                            <img src="https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Ja.jpg" alt="Slika" className='lg:rounded-full w-full h-full object-cover relative z-10' />
                         </div>
                     </div>
                     <div className=' lg:hidden block' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">

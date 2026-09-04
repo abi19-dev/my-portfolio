@@ -15,7 +15,7 @@ const AboutMeSection = () => {
                 <div className='flex flex-col w-full h-[90%] justify-center items-center lg:gap-0 gap-10'>
                     <div className='flex flex-col lg:h-screen justify-center items-center'>
                         <div className='lg:w-3/5 w-5/6 flex items-center justify-center text-center lg:text-2xl' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
-                            I am {new Date().getFullYear() - 2003} years old third year student of Faculty of Information Technology in Mostar. I am interested in programming and information technologies. Almost with each step that I take in my daily life, technology comes in sight and I am continuously mesmerized by the whole effect it has on our everyday society.
+                            I am a {new Date().getFullYear() - 2003} year old Software Engineer at RUBICON, with a year of professional experience building full-stack web, mobile and cloud applications. I am interested in programming and information technologies. Almost with each step that I take in my daily life, technology comes in sight and I am continuously mesmerized by the whole effect it has on our everyday society.
                         </div>
                     </div>
                     <div className="w-10/12 grid lg:grid-cols-3 lg:gap-12 grid-cols-1 gap-3 text-white lg:mb-10" style={{ fontFamily: "'Prompt', cursive" }} data-aos="zoom-in">
@@ -34,19 +34,19 @@ const AboutMeSection = () => {
                         <div className="info-item flex flex-col items-center" data-aos="fade-right">
                             <h3 className="text-yellow-400 lg:text-sm text-xs lg:mb-2">FAMILIAR WITH</h3>
                             <p className="lg:text-sm text-xs font-bold text-center">
-                                React, React Native, JavaScript, Node.js, Express.js, C++, C#, HTML/CSS, Figma
+                                React, React Native, Angular, TypeScript, Node.js / NestJS, C# / .NET, PostgreSQL, SQL Server, Azure
                             </p>
                         </div>
                         <div className="info-item flex flex-col items-center" data-aos="fade-up">
                             <h3 className="text-yellow-400 lg:text-sm text-xs lg:mb-2">SKILLS</h3>
                             <p className="lg:text-sm text-xs font-bold text-center">
-                                Programming, App Development, Web Development, Graphic design
+                                Full-Stack Development, App Development, Web Development, Cloud & DevOps, UI/UX Design
                             </p>
                         </div>
                         <div className="info-item flex flex-col items-center" data-aos="fade-left">
                             <h3 className="text-yellow-400 lg:text-sm text-xs lg:mb-2">CURRENTLY LEARNING</h3>
-                            <p className="lg:text-sm text-xs font-bold">
-                                Angular
+                            <p className="lg:text-sm text-xs font-bold text-center">
+                                .NET &amp; Azure cloud architecture
                             </p>
                         </div>
 

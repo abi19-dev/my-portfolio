@@ -12,17 +12,17 @@ const Lezzet2Page = () => {
     }, []);
 
     const images = [
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet8.png", alt: "Karate Website" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet9.png", alt: "Karate Website Page 2" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet1.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet2.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet3.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet4.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet5.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet6.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet7.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet11.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Lezzet10.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Lezzet8.png", alt: "Karate Website" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Lezzet9.png", alt: "Karate Website Page 2" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Lezzet1.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Lezzet2.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Lezzet3.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Lezzet4.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Lezzet5.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Lezzet6.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Lezzet7.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Lezzet11.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Lezzet10.png", alt: "Karate Website Page 3" },
     ];
 
     return (
@@ -32,7 +32,7 @@ const Lezzet2Page = () => {
                     <div className='lg:h-[20%] h-[15%] w-full flex items-center pl-5 pt-3' data-aos="fade-down">
                         <div className='flex flex-row gap-3 items-center lg:h-full'>
                             <div className='h-full' data-aos="zoom-in">
-                                <img src="https://abdulahportfolio.blob.core.windows.net/portfolio/LezzetLogo.png" alt="Slika" className='w-full h-full' />
+                                <img src="https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/LezzetLogo.png" alt="Slika" className='w-full h-full' />
                             </div>
                             <div className='flex flex-col lg:gap-0 gap-2' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-down">
                                 <p className='lg:text-xl font-bold'>Lezzet</p>
@@ -84,12 +84,12 @@ const Lezzet2Page = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 12l14 0" /><path d="M5 12l4 4" /><path d="M5 12l4 -4" /></svg> First Page
                     </Link>
                     <Link
-                        to="vidgeai"
+                        to="thnx"
                         smooth={true}
                         duration={500}
                         className="hover:text-myYellow-1000 font-bold flex gap-1 lg:pr-8 pr-3 z-10"
                     >
-                        VidgeAI <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
+                        Thank You <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
                     </Link>
                 </div>
             </div>

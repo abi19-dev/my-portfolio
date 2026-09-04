@@ -13,24 +13,24 @@ const KarateBHWebsite2 = () => {
     }, []);
 
     const images = [
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Home1.webp", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Home2.webp", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Home3.webp", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/News1.webp", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/News2.webp", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/CreatePost1.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/CreatePost2.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Home12Mobile.webp", alt: "Karate Website" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Home2Mobile.webp", alt: "Karate Website Page 2" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Home3Mobile.webp", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/Home4Mobile.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/NavBar1Mobile.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/NavBar2Mobile.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/News1Mobile.webp", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/News2Mobile.webp", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/News3Mobile.webp", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/CreatePost1Mobile.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/CreatePost2Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Home1.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Home2.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Home3.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/News1.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/News2.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/CreatePost1.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/CreatePost2.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Home12Mobile.png", alt: "Karate Website" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Home2Mobile.png", alt: "Karate Website Page 2" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Home3Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/Home4Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/NavBar1Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/NavBar2Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/News1Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/News2Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/News3Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/CreatePost1Mobile.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/CreatePost2Mobile.png", alt: "Karate Website Page 3" },
     ];
 
     return (
@@ -40,7 +40,7 @@ const KarateBHWebsite2 = () => {
                     <div className='lg:h-[20%] h-[15%] w-full flex items-center pl-5 pt-3' data-aos="fade-down">
                         <div className='flex flex-row gap-3 items-center lg:h-full'>
                             <div className='h-full' data-aos="zoom-in">
-                                <img src="https://abdulahportfolio.blob.core.windows.net/portfolio/karatebhappicon.png" alt="Slika" className='w-full h-full' />
+                                <img src="https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/karatebhappicon.png" alt="Slika" className='w-full h-full' />
                             </div>
                             <div className='flex flex-col lg:gap-0 gap-2' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-down">
                                 <p className='lg:text-xl font-bold'>KarateBH Website</p>

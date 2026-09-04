@@ -8,21 +8,21 @@ import KarateBHApp from './pages/KarateBHApp'
 import KarateBHApp2 from './pages/KarateBHApp2'
 import KarateBHWebsite from './pages/KarateBHWebsite'
 import KarateBHWebsite2 from './pages/KarateBHWebsite2'
-import VidgeAI from './pages/VidgeAI'
-import VidgeAI2 from './pages/VidgeAI2'
 import Thnx from './pages/Thnx'
-import RDOnlineTV from './pages/RDOnlineTV'
-import RDOnlineTV2 from './pages/RDOnlineTV2'
 import Lezzet from './pages/Lezzet'
 import Lezzet2 from './pages/Lezzet2'
+import Setec from './pages/Setec'
+import Rubicon from './pages/Rubicon'
+import Rubicon2 from './pages/Rubicon2'
+import QuietParty from './pages/QuietParty'
+import QuietParty2 from './pages/QuietParty2'
+import PersonalProjects from './pages/PersonalProjects'
+import Slibe from './pages/Slibe'
+import Slibe2 from './pages/Slibe2'
 import MadinahGudier from './pages/MadinahGudier'
 import MadinahGuider1 from './pages/MadinahGuider1'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import ParticleBackground from './components/ParticleBackground';
-import FloatingShapes from './components/FloatingShapes';
-import MouseFollower from './components/MouseFollower';
-import SpecialEffects from './components/SpecialEffects';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 5000);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -38,11 +38,9 @@ function App() {
   if (isLoading) {
     return (
       <div className="loading-screen flex items-center justify-center h-screen bg-black-1000">
-        <ParticleBackground />
-        <SpecialEffects />
-        <LazyLoadImage 
-          className='lg:h-1/2 lg:w-fit w-1/2 h-fit rounded-full border-yellow-400 border-8 profile-image relative z-20' 
-          src={Karikatura} 
+        <LazyLoadImage
+          className='lg:h-1/2 lg:w-fit w-1/2 h-fit rounded-full border-yellow-400 border-8 profile-image relative z-20'
+          src={Karikatura}
           alt="Abdulah Đulović - Software Engineer Profile Picture"
           title="Abdulah Đulović"
         />
@@ -52,12 +50,6 @@ function App() {
 
   return (
     <main>
-      {/* Background Animations */}
-      <ParticleBackground />
-      <FloatingShapes />
-      <SpecialEffects />
-      <MouseFollower />
-      
       {/* Skip to content link for accessibility */}
       <a href="#home" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-yellow-400 text-black px-4 py-2 rounded z-50">
         Skip to main content
@@ -84,11 +76,54 @@ function App() {
         <ExperienceHome />
       </section>
 
+      <section id="rubicon" className="h-screen flex items-center justify-center bg-black-1000" role="main">
+        <Rubicon />
+      </section>
+
+      <section id="rubicon2" className="h-screen flex items-center justify-center bg-black-1000" role="main">
+        <header className="sr-only">
+          <h3>Rubicon Projects - Cost Modeling Tool, Knowledge Graph Slackbot, RUB 1 on 1</h3>
+        </header>
+        <Rubicon2 />
+      </section>
+
+      <section id="setec" className="h-screen flex items-center justify-center bg-black-1000" role="main">
+        <Setec />
+      </section>
+
+      <section id="personalprojects" className="h-screen flex items-center justify-center bg-black-1000" role="main">
+        <PersonalProjects />
+      </section>
+
       {/* Portfolio Projects */}
       <section id="portfolio" className="bg-black-1000" role="main">
         <header className="sr-only">
           <h2>Portfolio Projects by Abdulah Đulović</h2>
         </header>
+
+        {/* The Quiet Party */}
+        <article id="quietparty" className="h-screen flex items-center justify-center bg-black-1000">
+          <header className="sr-only">
+            <h3>The Quiet Party - US Federal Public Records Research Platform</h3>
+          </header>
+          <QuietParty />
+        </article>
+
+        <article id="quietparty2" className="h-screen flex items-center justify-center bg-black-1000">
+          <QuietParty2 />
+        </article>
+
+        {/* Slibe Project */}
+        <article id="slibe" className="h-screen flex items-center justify-center bg-black-1000">
+          <header className="sr-only">
+            <h3>Slibe - Panini Sticker Trading Platform</h3>
+          </header>
+          <Slibe />
+        </article>
+
+        <article id="slibe2" className="h-screen flex items-center justify-center bg-black-1000">
+          <Slibe2 />
+        </article>
 
         {/* MadinahGuider Project */}
         <article id="madinahguider" className="h-screen flex items-center justify-center bg-black-1000">
@@ -137,30 +172,6 @@ function App() {
         <article id="lezzet2" className="h-screen flex items-center justify-center bg-black-1000">
           <Lezzet2 />
         </article>
-
-        {/* VidgeAI Project */}
-        <article id="vidgeai" className="h-screen flex items-center justify-center bg-black-1000">
-          <header className="sr-only">
-            <h3>VidgeAI - Artificial Intelligence Project</h3>
-          </header>
-          <VidgeAI />
-        </article>
-
-        <article id="vidgeai2" className="h-screen flex items-center justify-center bg-black-1000">
-          <VidgeAI2 />
-        </article>
-
-        {/* RDOnlineTV Project */}
-        <article id="rdonlinetv" className="h-screen flex items-center justify-center bg-black-1000">
-          <header className="sr-only">
-            <h3>RDOnlineTV Streaming Website</h3>
-          </header>
-          <RDOnlineTV />
-        </article>
-
-        <article id="rdonlinetv2" className="h-screen flex items-center justify-center bg-black-1000">
-          <RDOnlineTV2 />
-        </article>
       </section>
 
       {/* Thank You Section */}
@@ -172,15 +183,16 @@ function App() {
       <div className="sr-only">
         <h1>Abdulah Đulović - Software Engineer and Web Developer Portfolio</h1>
         <p>
-          Abdulah Đulović is a talented 21-year-old Software Engineering student from Mostar, Bosnia and Herzegovina, 
-          specializing in React, React Native, JavaScript, and full-stack development. This portfolio showcases 
-          innovative projects including KarateBH mobile application, VidgeAI artificial intelligence project, 
-          Lezzet restaurant website, and RDOnlineTV streaming platform.
+          Abdulah Đulović is a Software Engineer at RUBICON in Sarajevo, Bosnia and Herzegovina,
+          specializing in full-stack web, mobile and cloud development with React, Angular, TypeScript,
+          NestJS, .NET and Azure. This portfolio showcases The Quiet Party research platform, the Slibe
+          sticker trading platform, the MadinahGuider tourism application, the KarateBH website and
+          mobile app, and the Lezzet e-commerce website.
         </p>
         <address>
           <p>Contact: abdulahdulovic@gmail.com</p>
           <p>Phone: +387-60-34-83-487</p>
-          <p>Location: Mostar, Bosnia and Herzegovina</p>
+          <p>Location: Sarajevo, Bosnia and Herzegovina</p>
         </address>
       </div>
     </main>

@@ -15,21 +15,21 @@ const KarateBHWebsite = () => {
             <div className='flex flex-col w-full h-screen bg-black-1000'>
                 <div className='flex lg:flex-row flex-col h-[90%] bg-black-1000 lg:justify-center items-center'>
                     <div className='lg:w-1/2 h-[45%] flex flex-col lg:justify-center justify-start items-center' data-aos="fade-down"><img effect='blur'
-                        src="https://abdulahportfolio.blob.core.windows.net/portfolio/KarateWebsite.webp"
+                        src="https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/KarateWebsite.png"
                         alt="Desktop View"
                         className='hidden lg:block w-full'
                     />
 
                         {/* Image for Mobile View */}
                         <img effect='opacity'
-                            src="https://abdulahportfolio.blob.core.windows.net/portfolio/GradientMobile.png"
+                            src="https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/GradientMobile.png"
                             alt="Mobile View"
                             className='block lg:hidden w-full h-full'
                         /></div>
                     <div className='lg:w-1/2 w-5/6 lg:pl-0 lg:pr-0 lg:h-full h-[55%] flex flex-col justify-center items-center' data-aos="fade-up">
                         <div className='flex flex-row gap-3 items-center'>
                             <div className='h-full lg:w-fit w-1/2 flex flex-col items-center justify-center' data-aos="zoom-in">
-                                <img src="https://abdulahportfolio.blob.core.windows.net/portfolio/karatebhappicon.png" alt="Slika" className='w-full h-full' />
+                                <img src="https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/karatebhappicon.png" alt="Slika" className='w-full h-full' />
                             </div>
                             <div className='flex flex-col gap-2' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-up">
                                 <p className='lg:text-4xl text-base font-bold'>KarateBH Website</p>

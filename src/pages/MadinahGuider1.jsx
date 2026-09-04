@@ -13,15 +13,15 @@ const MadinahGuider1 = () => {
     }, []);
 
     const images = [
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/MadinahHome1.png", alt: "MadinahGuider Screenshot 1" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/MadinahHomeLight1.png", alt: "MadinahGuider Screenshot 1" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/MadinahMap1.png", alt: "MadinahGuider Screenshot 2" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/MadinahMap2.png", alt: "MadinahGuider Screenshot 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/MadinahMapLight1.png", alt: "MadinahGuider Screenshot 1" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/MadinahLocationDetail1.png", alt: "MadinahGuider Screenshot 4" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/MadinahLocations1.png", alt: "MadinahGuider Screenshot 5" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/MadinahRoutes1.png", alt: "MadinahGuider Screenshot 6" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/MadinahRoutes2.png", alt: "MadinahGuider Screenshot 7" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/MadinahHome1.png", alt: "MadinahGuider Screenshot 1" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/MadinahHomeLight1.png", alt: "MadinahGuider Screenshot 1" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/MadinahMap1.png", alt: "MadinahGuider Screenshot 2" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/MadinahMap2.png", alt: "MadinahGuider Screenshot 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/MadinahMapLight1.png", alt: "MadinahGuider Screenshot 1" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/MadinahLocationDetail1.png", alt: "MadinahGuider Screenshot 4" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/MadinahLocations1.png", alt: "MadinahGuider Screenshot 5" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/MadinahRoutes1.png", alt: "MadinahGuider Screenshot 6" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/MadinahRoutes2.png", alt: "MadinahGuider Screenshot 7" },
     ];
 
     return (
@@ -31,7 +31,7 @@ const MadinahGuider1 = () => {
                     <div className='lg:h-[20%] h-[15%] w-full flex items-center pl-5 pt-3' data-aos="fade-down">
                         <div className='flex flex-row gap-3 items-center lg:h-full'>
                             <div className='h-full' data-aos="zoom-in">
-                                <img src="https://abdulahportfolio.blob.core.windows.net/portfolio/MadinahGuiderLogoPortfolio.png" alt="MadinahGuider Logo" className='w-[104px] h-[104px]' />
+                                <img src="https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/MadinahGuiderLogoPortfolio.png" alt="MadinahGuider Logo" className='w-[104px] h-[104px]' />
                             </div>
                             <div className='flex flex-col lg:gap-0 gap-2' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-down">
                                 <p className='lg:text-xl font-bold'>MadinahGuider</p>

@@ -12,9 +12,9 @@ const KarateBHApp2 = () => {
     }, []);
 
     const images = [
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/KarateAppMockup.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/KarateAppMockup2.png", alt: "Karate Website Page 3" },
-        { src: "https://abdulahportfolio.blob.core.windows.net/portfolio/KarateAppMockup3.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/KarateAppMockup.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/KarateAppMockup2.png", alt: "Karate Website Page 3" },
+        { src: "https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/KarateAppMockup3.png", alt: "Karate Website Page 3" },
     ];
 
     return (
@@ -24,7 +24,7 @@ const KarateBHApp2 = () => {
                     <div className='lg:h-[20%] h-[15%] w-full flex items-center pl-5 pt-3' data-aos="fade-down">
                         <div className='flex flex-row gap-3 items-center lg:h-full'>
                             <div className='h-full' data-aos="zoom-in">
-                                <img src="https://abdulahportfolio.blob.core.windows.net/portfolio/karatebhappicon.png" alt="Slika" className='w-full h-full' />
+                                <img src="https://pub-5efd615a4e234607823aeedfd05f2144.r2.dev/karatebhappicon.png" alt="Slika" className='w-full h-full' />
                             </div>
                             <div className='flex flex-col lg:gap-0 gap-2' style={{ fontFamily: "'Prompt', cursive" }} data-aos="fade-down">
                                 <p className='lg:text-xl font-bold'>KarateBH App</p>
