@@ -1,8 +1,10 @@
 import { useEffect } from 'react';
+import { useImage } from '../images';
 
 export default function Lightbox({ state, onChange, onClose }) {
   const { list, i } = state;
   const item = list[i];
+  const [ready, imgProps] = useImage(item.src);
 
   useEffect(() => {
     const n = list.length;
@@ -17,7 +19,8 @@ export default function Lightbox({ state, onChange, onClose }) {
 
   return (
     <div className="lightbox" role="dialog" aria-modal="true" aria-label={item.alt} onClick={onClose}>
-      <img src={item.src} alt={item.alt} />
+      {!ready && <div className="lightbox-slot" aria-hidden="true">Unpacking sticker…</div>}
+      <img src={item.src} alt={item.alt} className={ready ? undefined : 'pending'} {...imgProps} />
       <div className="lightbox-caption">
         <span>{item.alt}</span>
         <span className="dim">Tap / Esc to close · ← → to browse</span>

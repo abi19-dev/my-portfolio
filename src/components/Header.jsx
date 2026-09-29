@@ -1,51 +1,28 @@
-import { useState } from 'react';
-import { PROJECTS } from '../data';
+import { TABS } from '../album';
 
-const MENU_ITEMS = [
-  { href: '#about', label: 'About me', num: '01' },
-  { href: '#experience', label: 'Experience', num: '02' },
-  { href: '#projects', label: 'Projects', num: '03' },
-  ...PROJECTS.map(p => ({ href: '#' + p.id, label: p.name, num: '', sub: true })),
-  { href: '#contact', label: 'Contact', num: '04' },
-];
-
-export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const closeMenu = () => setMenuOpen(false);
+export default function Header({ current, showBrandText, goTo }) {
+  let active = 0;
+  TABS.forEach((t, i) => { if (t.page <= current) active = i; });
 
   return (
-    <header className="site-header">
-      <div className="nav-bar">
-        <a href="#home" className="brand">
-          <span className="brand-mark">AĐ</span>Abdulah Đulović
-        </a>
-        <nav className="nav-desktop" aria-label="Primary">
-          <a href="#about" className="nav-link">About</a>
-          <a href="#experience" className="nav-link">Experience</a>
-          <a href="#projects" className="nav-link">Projects</a>
-          <a href="#contact" className="nav-cta">Contact</a>
-        </nav>
-        <button
-          type="button"
-          className="menu-button"
-          aria-label="Menu"
-          aria-expanded={menuOpen}
-          aria-controls="mobile-menu"
-          onClick={() => setMenuOpen(o => !o)}
-        >
-          {menuOpen ? 'Close' : 'Menu'}
-        </button>
-      </div>
-      {menuOpen && (
-        <nav id="mobile-menu" className="menu-panel" aria-label="Mobile">
-          {MENU_ITEMS.map(m => (
-            <a key={m.href} href={m.href} onClick={closeMenu} className={m.sub ? 'menu-item sub' : 'menu-item'}>
-              <span className="menu-num">{m.num}</span>
-              {m.label}
-            </a>
-          ))}
-        </nav>
-      )}
+    <header className="topbar">
+      <button type="button" className="brand" onClick={() => goTo(0)} aria-label="Back to cover">
+        <span className="brand-mark">AĐ</span>
+        {showBrandText && <span className="brand-text">Đulović · Sticker Album 2026</span>}
+      </button>
+      <nav className="tabs" aria-label="Album sections">
+        {TABS.map((t, i) => (
+          <button
+            key={t.label}
+            type="button"
+            className={i === active ? 'tab active' : 'tab'}
+            aria-current={i === active ? 'page' : undefined}
+            onClick={() => goTo(t.page)}
+          >
+            {t.label}
+          </button>
+        ))}
+      </nav>
     </header>
   );
 }
