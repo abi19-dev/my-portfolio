@@ -6,7 +6,8 @@ export default function About() {
       <div className="card about-main">
         <h2 className="section-label">01 — About me</h2>
         <p className="about-text">
-          I’m a 23-year-old software engineer interested in programming and information technologies.{' '}
+          I’m a 23-year-old software engineer interested in programming and information technologies.
+          I use Claude Code to plan, build and ship features faster.{' '}
           <span className="muted">
             Almost every step I take in daily life, technology comes into sight — and I’m continuously mesmerized by the effect it has on our everyday society.
           </span>

@@ -13,7 +13,7 @@ export const CONTACT = {
 export const PROJECTS = [
   { id: 'quietparty', name: 'The Quiet Party', kind: 'Web platform', tagline: 'Facts only. Verbatim quotes and the record around them.',
     summary: 'A research platform for US federal public records — search what politicians said, compare them side by side and share the sourced record.',
-    role: 'Full Stack Developer', period: 'Jul 2026 – Present', tags: ['Stripe', 'CMS', 'Admin'],
+    role: 'Full Stack Developer', period: 'Jul 2026 – Present', tags: ['Stripe', 'CMS', 'Admin', 'Claude Code'],
     mockup: 'QuietPartySearch.webp', mockupMobile: 'QuietPartySearch.webp', logo: R2 + 'QuietPartyLogo.svg', logoBg: '#FFFFFF', logoPad: '10px', logoPadSm: '5px', logoFit: 'contain', logoScale: 1,
     link: 'https://www.thequietparty.com', linkLabel: 'thequietparty.com',
     learn: [
@@ -23,7 +23,7 @@ export const PROJECTS = [
     slides: shots('The Quiet Party', ['QuietPartySearch.webp', 'QuietPartyResults.webp', 'QuietPartyCompare.webp', 'QuietPartyBrowse.webp']) },
   { id: 'slibe', name: 'Slibe', kind: 'Mobile & web', tagline: 'Find. Match. Trade your stickers.',
     summary: 'A Panini sticker trading platform that matches collectors who have duplicates with collectors who need them — 13,000+ users in BiH.',
-    role: 'Full Stack Developer', period: 'Apr 2026 – Present', tags: ['Matching algorithm', 'Real-time chat', '13k+ users'],
+    role: 'Full Stack Developer', period: 'Apr 2026 – Present', tags: ['Matching algorithm', 'Real-time chat', '13k+ users', 'Claude Code'],
     mockup: 'SlibeAlbum.webp', mockupMobile: 'SlibeAlbum.webp', logo: R2 + 'SLIBE.svg', logoBg: '#FFFFFF', logoPad: '0px', logoPadSm: '0px', logoFit: 'cover', logoScale: 1.25,
     link: 'https://slibe.online', linkLabel: 'slibe.online',
     learn: [
@@ -52,7 +52,7 @@ export const PROJECTS = [
     slides: shots('KarateBH App', ['KarateAppMockup.png', 'KarateAppMockup2.png', 'KarateAppMockup3.png']) },
   { id: 'karatebhwebsite', name: 'KarateBH Website', kind: 'Website', tagline: 'With sports values, we strengthen society — together.',
     summary: "The federation's public website — news, posts and a content editor — designed in Figma and built in React, for desktop and mobile.",
-    role: 'Web Developer & Designer', period: 'Karate Federation of BiH', tags: ['React', 'Figma', 'UI/UX'],
+    role: 'Web Developer & Designer', period: 'Karate Federation of BiH', tags: ['React', 'Figma', 'UI/UX', 'Claude Code'],
     link: 'https://karatebih.ba', linkLabel: 'karatebih.ba',
     mockup: 'KarateWebsite.png', mockupMobile: 'GradientMobile.png', logo: R2 + 'karatebhappicon.png', logoBg: 'transparent', logoPad: '0px', logoPadSm: '0px', logoFit: 'contain', logoScale: 1,
     learn: [
@@ -80,9 +80,9 @@ export const EXPERIENCES = [
       'Beyond the code, what truly defined my time there was the people — kind, talented and supportive folks who made every challenge a joy. RUBICON didn’t just shape me as a developer; it gave me a community where I genuinely thrived.'],
     roles: [{ title: 'Software Engineer · Full time', period: 'Dec 2025 – Sep 2026' }, { title: 'Intern', period: 'Oct 2025 – Nov 2025' }],
     work: [
-      { name: 'Cost Modeling Tool', period: 'Apr – Sep 2026', desc: 'Full-stack work across an Angular frontend and an ASP.NET Core Azure Functions backend — REST endpoints with validation and SQL Server integration, plus dynamic filtering and data visualization.', stack: 'Angular · ASP.NET Core · Azure Functions · SQL Server · Dapper' },
-      { name: 'KG – Slackbot PoC', period: 'Dec 2025 – Jan 2026', desc: 'Modelled a knowledge graph from an unstructured source document, then built a natural-language pipeline that lets an LLM interpret a question and return grounded answers.', stack: 'Neo4j · Cypher · Python · LLM' },
-      { name: 'RUB 1 on 1', period: 'Sep – Nov 2025', desc: 'Client and server for a one-on-one meeting management tool — note-taking, streamlined 1-on-1 workflows and modular, reusable UI components.', stack: 'NestJS · React · TypeScript · Sass · Azure SQL' }] },
+      { name: 'Cost Modeling Tool', period: 'Apr – Sep 2026', desc: 'Full-stack work across an Angular frontend and an ASP.NET Core Azure Functions backend — REST endpoints with validation and SQL Server integration, plus dynamic filtering and data visualization.', stack: 'Angular · ASP.NET Core · Azure Functions · SQL Server · Dapper · Claude\u00a0Code' },
+      { name: 'KG – Slackbot PoC', period: 'Dec 2025 – Jan 2026', desc: 'Modelled a knowledge graph from an unstructured source document, then built a natural-language pipeline that lets an LLM interpret a question and return grounded answers.', stack: 'Neo4j · Cypher · Python · LLM · Claude\u00a0Code' },
+      { name: 'RUB 1 on 1', period: 'Sep – Nov 2025', desc: 'Client and server for a one-on-one meeting management tool — note-taking, streamlined 1-on-1 workflows and modular, reusable UI components.', stack: 'NestJS · React · TypeScript · Sass · Azure SQL · Claude\u00a0Code' }] },
   { id: 'setec', name: 'SETEC d.o.o.', location: 'Sarajevo, Bosnia and Herzegovina', badge: '2025', logo: R2 + '1F245381-E8FC-43A7-8AB7-D2583ECA0F5B.png', logoBg: '#222220', logoPad: '0px', logoFit: 'cover',
     text: ['My six-month internship at SETEC was the moment my ambitions turned into reality — my first opportunity to step out of a learning environment and touch a real, living project. Working with the basics of Chromium, I felt the thrill and responsibility of contributing to production software for the first time. It was the spark that ignited my journey as an engineer.'],
     roles: [{ title: 'Software Engineering Intern', period: 'Feb 2025 – Jul 2025' }] },
@@ -94,7 +94,7 @@ export const FACTS = [
   { k: 'Education', v: 'Software Engineering' },
   { k: 'Experience', v: 'About 3 years' },
   { k: 'Born', v: 'August 2003' },
-  { k: 'Skills', v: 'Full-stack, app & web, cloud & DevOps, UI/UX' },
+  { k: 'Skills', v: 'Full-stack, app & web, cloud & DevOps, AI-assisted development, UI/UX' },
   { k: 'Learning', v: '.NET & Azure cloud architecture' },
 ];
 
